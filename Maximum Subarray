@@ -1,4 +1,4 @@
-     // APPROACH-2 PREFIX ARRAY
+     // APPROACH-2 PREFIX ARRAY - Order of n^2
      public static int maxSum(int subarr[]){
          int max=Integer.MIN_VALUE;
          int sum=0;
