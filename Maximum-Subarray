@@ -1,3 +1,5 @@
+// Kadane's Algorithm - O(n)
+
 class Solution {
     public int maxSubArray(int[] nums) {
         int sum=0, max=nums[0];
