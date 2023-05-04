@@ -1,4 +1,4 @@
-// Kadane's Algorithm - O(n)
+// Kadane's Algorithm - Order of (n)
 
 class Solution {
     public int maxSubArray(int[] nums) {
