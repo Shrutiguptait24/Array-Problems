@@ -1,0 +1,32 @@
+//Big Oh(n)
+
+class Solution {
+    public int trap(int[] height) {
+        int n= height.length;
+        int sum=0;
+
+        if(height.length>2){
+        int leftmax[]= new int[height.length];
+         leftmax[0] = height[0];
+        for(int i=0; i<height.length-1; i++){
+           leftmax[i+1]=Math.max(leftmax[i],height[i+1]);
+            }
+
+        int rightmax[]= new int[height.length];
+         rightmax[n-1]= height[n-1];
+         for(int j=n-1; j>0; j--){
+             rightmax[j-1]= Math.max(rightmax[j], height[j-1]);
+         }
+
+         int trap[]= new int[n];
+         for(int i=0; i<n-1; i++){
+             trap[i]= (Math.min(leftmax[i], rightmax[i]))-height[i];  //trapped water on each bar
+             sum = sum+trap[i];  //sum of trapped water 
+         }
+        return sum;
+        }
+        else{
+            return 0;
+        }
+    }
+}
