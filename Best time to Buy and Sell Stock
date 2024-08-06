@@ -1,4 +1,4 @@
-// O(length of array)
+// enter hit
 
 class Solution {
     public int maxProfit(int[] prices) {
@@ -6,7 +6,7 @@ class Solution {
         int maxprofit=0;
         int profit;
         for(int i=0; i<prices.length; i++){
-            if(costprice<prices[i]){
+            if(costprice< prices[i]){
                 profit= prices[i]-costprice;
                 maxprofit= Math.max(maxprofit,profit);  
             }
