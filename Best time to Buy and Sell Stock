@@ -1,5 +1,5 @@
 // O(length of array)
-
+// this change made
 class Solution {
     public int maxProfit(int[] prices) {
         int costprice=Integer.MAX_VALUE;
